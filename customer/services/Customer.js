@@ -90,7 +90,7 @@ class CustomerService {
       case "REMOVE_FROM_CART":
         this.repository.AddToCart(userId, product, qty, true);
       case "CREATE_ORDER":
-        this.repository.CreateCart(userId, order);
+        this.repository.AddOrderToProfile(userId, order);
         break;
       case "TESTING":
         console.log("*** TESTING ***");
